@@ -20,6 +20,7 @@ import java.lang.reflect.Method;
 import java.sql.Array;
 import java.text.Annotation;
 import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -131,6 +132,7 @@ public class MyDispatcherServlet extends HttpServlet
                 Class<?> controllerClass = Class.forName(methodAttributes.getControllerClass());
                 Object controllerInstance = controllerClass.newInstance();
                 Method method = controllerClass.getMethod(methodAttributes.getMethodName());
+                //Enumeration<String> stringEnum = req.getParameterNames();
                 Object responseProcesare = method.invoke(controllerInstance);
                 return responseProcesare;
             } catch (ClassNotFoundException e) {
