@@ -6,6 +6,12 @@
         <element id="directory" name="classes">
           <element id="module-output" name="MVCApp" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.9.13" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" />
+          <element id="library" level="project" name="Maven: com.oracle:ojdb6:11.2.0.3" />
+        </element>
       </element>
       <element id="javaee-facet-resources" facet="MVCApp/web/Web" />
     </root>
