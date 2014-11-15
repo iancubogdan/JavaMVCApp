@@ -25,6 +25,9 @@
         <module name="MVCApp" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MVCApp" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

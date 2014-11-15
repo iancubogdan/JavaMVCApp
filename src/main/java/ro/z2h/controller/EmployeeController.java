@@ -24,9 +24,9 @@ public class EmployeeController
     }
 
     @MyRequestMethod(urlPath = "/one")
-    public Employee getOneEmployee()
+    public Employee getOneEmployee(String idEmployee)
     {
 
-        return new EmployeeServiceImpl().findOneEmployee(100l);
+        return new EmployeeServiceImpl().findOneEmployee(Long.parseLong(idEmployee));
     }
 }

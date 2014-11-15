@@ -1,7 +1,8 @@
 hrApp.controller('EmployeeListController', ['$scope', '$http', '$location', function($scope, $http, $location) {
     $scope.employees = [];
-    $http({url: 'http://localhost:8282/datamodel/employees/findAll', method: 'GET'}).
+    $http({url: 'http://localhost:8080/app/mvc/employee/all', method: 'GET'}).
         success(function(data, status, headers, config) {
+            $scope.employees = [];
             $scope.employees = data;
         });
     $scope.viewEmployee = function(employeeId) {
